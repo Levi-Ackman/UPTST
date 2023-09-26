@@ -20,8 +20,8 @@ if __name__ == '__main__':
     # data loader
     parser.add_argument("--data_path", type=str,default='/home/Paradise/Code_UPTST/dataset', help="Path to data folder")
     parser.add_argument("--data_name", type=str,default='cq_hfmd_2015_21.csv', help="data name")
-    parser.add_argument("--tasks", type=str,default='MS', help="choose tasks from: [ \
-         S: univariate,   MS_1: multi to single (w/o ano), MS_2: multi to single (with ano), M2: multi to 2   ]")
+    parser.add_argument("--tasks", type=str,default='MS_2', help="choose tasks from: [ \
+         S: univariate,   MS_1: multi to single (w/o ano), MS_2: multi to single (with ano)]")
     parser.add_argument("--scale", type=bool,default=True, help="scale data with train_set")
     parser.add_argument("--split_ratio", type=list, default=[0.7,0.2,0.1], help="split_ratio of data (train_test_val)")
     
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     # forecasting task
     parser.add_argument('--seq_len', type=int, default=96, help='input sequence length')
     parser.add_argument('--label_len', type=int, default=48, help='start token length')
-    parser.add_argument('--pred_len', type=int, default=24, help='prediction sequence length')
+    parser.add_argument('--pred_len', type=int, default=14, help='prediction sequence length')
 
     # model define
     parser.add_argument('--enc_in', type=int, default=8, help='encoder input size')
