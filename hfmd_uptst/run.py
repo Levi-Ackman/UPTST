@@ -14,10 +14,10 @@ if __name__ == '__main__':
     parser.add_argument("--checkpoint_path", type=str, default='./check_folder',help="checkpoint_path")
     parser.add_argument("--data_path", type=str,default='/home/Paradise/Code_UPTST/dataset', help="Path to data folder")
     parser.add_argument("--data_name", type=str,default='cq_hfmd_2015_21.csv', help="data name")
-    parser.add_argument("--seq_len", type=int, default=384, help="Sequence length")
-    parser.add_argument("--pre_len", type=int, default=24, help="prediction length")
+    parser.add_argument("--seq_len", type=int, default=96, help="Sequence length")
+    parser.add_argument("--pre_len", type=int, default=14, help="prediction length")
     parser.add_argument("--bs", type=int,default=64, help="Batch size")
-    parser.add_argument("--tasks", type=str,default='MS', help="choose tasks from: [ \
+    parser.add_argument("--tasks", type=str,default='M2', help="choose tasks from: [ \
             S: univariate, MS_0,  MS_1: multi to single (w meteoric), MS_2: multi to single (with herpagina), M2: multi to 2 \ ")
     parser.add_argument("--scale", type=bool,default=True, help="scale data with train_set")
     parser.add_argument("--split_ratio", type=list, default=[0.7,0.2,0.1], help="split_ratio of data (train_test_val)")
