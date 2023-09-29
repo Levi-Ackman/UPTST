@@ -9,11 +9,11 @@ Modify the data_path in the "run.py " file to point to your dataset folder.
 
 Run the code using the following command:
 
-python run_scripts.py
+```python run_scripts.py```
 
 After running, generate a CSV file of the results with:
 
-python f1.py
+```python f1.py```
 
 The results will be saved as "uptst_results.csv."
 
@@ -33,7 +33,7 @@ Modify the data_path in the run.py file to point to your dataset folder.
 
 Run the code using the following command:
 
-bash scripts.sh
+```bash scripts.sh```
 
 After running, check the training results in the "test_dict " folder and view the prediction curves in the "visual" folder.
 
